@@ -164,3 +164,7 @@ input[type='checkbox']:checked:after {
   align-items: center;
   width: 100px;
 }
+
+#new-task-title {
+  width: 720px;
+}
