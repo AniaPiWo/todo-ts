@@ -1,14 +1,166 @@
-#img {
-  display: block;
-  margin: auto;
-  height: 128px;
-  width: 128px;
-  padding: 2rem;
-}
-
-#canvas {
+/* #canvas {
   display: block;
   margin: 2rem auto;
   width: 540px;
   height: 540px;
+}
+ */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+.container {
+  text-align: center;
+  background-color: #333;
+  color: #ffffff;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  width: 800px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  gap: 20px;
+  border: 1px solid #7434fc;
+  border-radius: 4px;
+  margin: 10px 0;
+  word-break: break-all;
+}
+
+ul {
+  font-size: 2rem;
+  padding: 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid #7434fc;
+  background-color: #7434fc;
+  border-radius: 4px;
+  font-size: 1.2em;
+  color: white;
+  cursor: pointer;
+}
+
+i {
+  color: #7434fc;
+}
+
+label {
+  text-align: left;
+  max-width: 85%;
+}
+
+input {
+  padding: 10px 20px;
+  border: 1px solid #7434fc;
+  background-color: #333;
+  border-radius: 4px;
+  font-size: 1.2em;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+form {
+  border-bottom: 1px solid #7434fc;
+  padding: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tasks {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  cursor: pointer;
+}
+input[type='checkbox']:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  border: 1px solid #7434fc;
+  background-color: inherit;
+}
+input[type='checkbox']:checked:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+}
+input[type='checkbox']:checked:after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.delete {
+  font-size: 1.3rem;
+  background-color: inherit;
+  padding-top: 8px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
 }
